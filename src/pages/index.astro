@@ -1,0 +1,24 @@
+---
+const now = new Date().toISOString();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <main class="min-h-screen grid place-items-center bg-gradient-to-b from-orange-400 to-orange-600">
+      <section class="text-center text-white px-4">
+        <h1 class="text-6xl font-bold mb-6">Welcome to Astro 🚀 running on Deno 🦕</h1>
+        <p class="text-xl">
+          Visit <a href="https://astro.build/">astro.build/</a> to read the documentation
+        </p>
+        <p>{now}</p>
+      </section>
+    </main>
+  </body>
+</html>
